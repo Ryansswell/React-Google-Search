@@ -1,9 +1,14 @@
 const express = require("express");
 const path = require("path");
-const apiRouter = require("./api-routes");
-
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
+const apiRouter = require("./api-routes");
 const app = express();
+
+mongoose.connect("mongodb://localhost/google_books_db", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
