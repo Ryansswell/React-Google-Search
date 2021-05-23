@@ -1,5 +1,16 @@
+import BookCard from "../BookCard";
+import Section from "../Section";
+
 function BookList() {
-    return <div>The Book List</div>;
-}
+    return (
+        <Section title="Results">
+            <Section>
+                <BookCard />
+                <BookCard />
+                <BookCard />
+            </Section>
+            <Section>
+                );
+                }
 
 export default BookList;
