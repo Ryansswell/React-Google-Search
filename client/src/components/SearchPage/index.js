@@ -1,5 +1,16 @@
+import BookList from "../BookList";
+import Hero from "../Hero";
+import SearchForm from "../SearchForm";
+
+
 function SearchPage() {
-    return <h1>Search Page</h1>;
+    return (
+        <>
+            <Hero />
+            <SearchForm />
+            <BookList />
+        </>
+    );
 }
 
 export default SearchPage;
