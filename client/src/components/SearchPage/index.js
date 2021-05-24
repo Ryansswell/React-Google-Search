@@ -30,11 +30,11 @@ function SearchPage() {
                 onSearchChange={(e) => setSearch(e.target.value)}
                 onSubmit={handleSearchFormSubmit}
             />
-            <BookList />
+            <BookList
+                books={books}
+            />
         </Wrapper>
     );
 }
-
-
 
 export default SearchPage;
