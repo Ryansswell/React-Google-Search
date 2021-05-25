@@ -1,9 +1,8 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
-const apiRouter = require("apiRouter")
+const appRouter = require("./api-routes");
 const PORT = process.env.PORT || 3001;
-const apiRouter = require("./api-routes");
 const app = express();
 
 mongoose.connect("mongodb://localhost/google_books_db", {
@@ -16,7 +15,7 @@ mongoose.connect("mongodb://localhost/google_books_db", {
 app.use(express.json());
 
 // Define API BEFORE adding routes for serving client
-app.use(apiRouter);
+app.use(appRouter);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
