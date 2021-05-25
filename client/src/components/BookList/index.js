@@ -8,7 +8,7 @@ function BookList({ books }) {
             {books.length > 0 ? (
                 books.map((book) => <BookCard key={book.id} book={book} />)
             ) : (
-                <p>No results to display.</p>
+                <p>No results to display. Try searching for a topic. </p>
             )
             }
         </Section>

@@ -1,13 +1,24 @@
 const userRouter = require("express").Router();
+const { Book } = require("../models");
 
-// example signup
-userRouter.post("/user", (req, res) => {
-  res.json({
-    id: 1,
-    email: "fake@email.com",
-    firstName: "Fake",
-    lastName: "User",
-  });
+
+userRouter.post("/books", async (req, res) => {
+  try {
+    const { title, author, description, image, link } = req.body;
+    const book = await Book.create({
+      title,
+      authors,
+      description,
+      image,
+      link,
+    });
+    res.json(book);
+  } catch (error) {
+    console.error(error);
+    res.sendStatus(400);
+
+  }
+
 });
 
 module.exports = userRouter;

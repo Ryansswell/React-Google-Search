@@ -13,12 +13,29 @@ function SearchForm({ search, onSearchChange, onSubmit }) {
                         value={search}
                         onChange={onSearchChange}
                         placeholder="Enter Book"
+                        disabled={booksLoading}
                     />
                 </div>
-                <button className="btn btn-primary ml-auto px-5">Search</button>
+                <button
+                    className="btn btn-primary ml-auto px-5"
+                    disabled={booksLoading}
+                >
+                    {booksLoadin ? (
+                        <>
+                            <span
+                                className="spinner-border spinner-border-sm"
+                                role="status"
+                                aria-hidden="true"
+                            />{""}
+                        Loading...
+                        </>
+                    )
+                }
+
+                    Search
+                    </button>
             </form>
         </Section>
-
     );
 }
 
