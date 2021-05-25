@@ -1,29 +1,43 @@
-# Create React Express App
+Professional README.md
 
-## About This Boilerplate
+## Description
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+React Google Book Search
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## License
 
-## Starting the app locally
+![ISC License](https://img.shields.io/static/v1.svg?label=License&message=MIT&color=yellow)
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+## Installation
 
-```
-npm install
-```
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-This should install node modules within the server and the client folder.
+## Usage
 
-After both installations complete, run the following command in your terminal:
+Provide instructions and examples for use. Include screenshots as needed.
 
-```
-npm start
-```
+## Credits
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+List your collaborators, if any, with links to their GitHub profiles.
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+If you followed tutorials, include links to those here as well. undefined
 
-## Deployment (Heroku)
+## How to Contribute
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+
+## Tests
+
+Provide examples or screenshots to prove working.
+
+## Questions
+
+Any questions?
+
+What is your GitHub username? @Ryansswell
+
+What is your email?
+
+What is the name of your project? React Google Book Search
+
+What is your LinkedIn?
