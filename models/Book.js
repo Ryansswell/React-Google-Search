@@ -22,20 +22,18 @@ const bookSchema = new Schema({
         trim: true,
         minLength: 1,
     },
-    Image: {
+    image: {
         type: String,
         required: true,
         trim: true,
         minLength: 1,
     },
-    Link: {
+    link: {
         type: String,
         required: true,
         trim: true,
         minLength: 1,
     },
-
-
 });
 
 const Book = mongoose.model("blog", bookSchema);

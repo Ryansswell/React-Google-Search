@@ -1,6 +1,4 @@
 
-
-const a = require("express").Router();
-
-
-module.exports = a;
+module.exports = {
+    Book: require("./Book"),
+};
