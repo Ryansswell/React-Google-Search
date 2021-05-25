@@ -6,12 +6,10 @@ import Hero from "../Hero";
 import SearchForm from "../SearchForm";
 import Wrapper from "../Wrapper";
 
-
 function SearchPage() {
     const [search, setSearch] = useState("");
     const [books, setBooks] = useState([]);
     const [booksLoading, setBooksLoading] = useState(false);
-
 
     const handleSearchFormSubmit = async (e) => {
         try {

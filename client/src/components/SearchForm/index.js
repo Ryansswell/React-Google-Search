@@ -1,8 +1,7 @@
 import Section from "../Section";
 
-function SearchForm({ search, onSearchChange, onSubmit }) {
+function SearchForm({ search, onSearchChange, onSubmit, booksLoading }) {
     return (
-
         <Section title="Book Search">.
             <form className="d-flex flex-column" onSubmit={onSubmit}>
                 <div className="form-group">
@@ -20,17 +19,17 @@ function SearchForm({ search, onSearchChange, onSubmit }) {
                     className="btn btn-primary ml-auto px-5"
                     disabled={booksLoading}
                 >
-                    {booksLoadin ? (
+                    {booksLoading ? (
                         <>
-                            <span
-                                className="spinner-border spinner-border-sm"
+                            <span className="spinner-border spinner-border-sm mr-3"
                                 role="status"
-                                aria-hidden="true"
-                            />{""}
-                        Loading...
-                        </>
-                    )
-                }
+                                aria-hidden="true" />
+                    Loading...
+                    </>
+                    ) : (
+                        "Submit"
+                    )}
+
 
                     Search
                     </button>
