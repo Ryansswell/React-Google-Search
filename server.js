@@ -5,7 +5,7 @@ const appRouter = require("./api-routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-mongoose.connect("mongodb://localhost/google_books_db", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google_books_db", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

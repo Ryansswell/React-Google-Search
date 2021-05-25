@@ -4,7 +4,7 @@ import Nav from "./Nav"
 
 function Navbar() {
     return (
-        <nav class="navbar navbar-light bg-light">
+        <nav className="navbar navbar-light bg-light">
             <Link className="navbar-brand" to="/">
                 React Google Books Info!
                 </Link>
