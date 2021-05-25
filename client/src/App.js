@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import SearchPage from "./components/SearchPage";
 import SavedPage from "./components/SavedPage";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 
 function App() {
