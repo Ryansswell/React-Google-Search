@@ -19,4 +19,4 @@ What is the name of your project? React Google Book Search
 
 What is your LinkedIn? https://www.linkedin.com/in/ryan-anderson-52842784/
 
-![](http://https://github.com/Ryansswell/React-Google-Search/blob/main/Corgi-Pic.PNG)
+![](https://github.com/Ryansswell/React-Google-Search/blob/main/Corgi-Pic.PNG)
